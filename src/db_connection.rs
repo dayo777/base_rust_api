@@ -1,0 +1,4 @@
+/*
+    Initialize DB connection here.
+    Add Database functions here.
+ */
