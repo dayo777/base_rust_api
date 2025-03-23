@@ -45,33 +45,15 @@ The project follows a modular structure for better scalability and maintainabili
 base-api-rust/
 │── src/
 │   ├── main.rs            # Entry point of the application
-│   ├── lib.rs             # Library module (optional for reuse)
-│   ├── config.rs          # Configuration management (loading .env, settings)
-│   ├── routes/
-│   │   ├── mod.rs         # Routes module
-│   │   ├── health.rs      # Health check route
-│   │   ├── route_1.rs     # Route-1
-│   │   ├── route_2.rs     # Route-2, add more routes as needed   
-│   ├── handlers/
-│   │   ├── mod.rs         # Handlers module
-│   │   ├── handler_1.rs   # App logic for route-1 & model-1
-│   │   ├── handler_2.rs   # App logic for route-2 & model-2
-│   ├── models/
-│   │   ├── mod.rs         # Models module
-│   │   ├── model_1.rs     # Model-1 definition
-│   │   ├── model_2.rs     # Model-2 definition
-│   ├── db/
-│   │   ├── mod.rs         # Database module
-│   │   ├── connection.rs  # Database connection setup
-│   ├── errors/
-│   │   ├── mod.rs         # Error handling module
-│   │   ├── app_error.rs   # Custom application errors
-│   ├── middleware/
-│   │   ├── mod.rs         # Middleware module
-│   │   ├── auth.rs        # Authentication middleware (e.g., JWT)
-│   ├── utils/
-│   │   ├── mod.rs         # Utility module
-│   │   ├── logger.rs      # Logging utilities
+│   ├── auth.rs            # Authentication middleware (e.g., JWT)
+│   ├── config.rs          # Configuration management
+│   ├── db_connection.rs   # Database connection setup
+│   ├── errors.rs          # Custom application errors
+│   ├── handlers.rs        # define App logic here
+│   ├── logging.rs          # Logging utilities
+│   ├── models.rs          # define model structures
+│   ├── routes.rs          # create routes here
+│   ├── utils.rs           # define utility functions for use in other modules
 │── .env                   # Environment variables
 │── Cargo.toml             # Rust dependencies
 │── Dockerfile             # Docker configuration
